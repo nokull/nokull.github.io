@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<div id="title">
+  <h1>{{ .Site.Title }}</h1>
+  <span class="divider"></span>
+  <p>{{ .Site.Params.description }}</p>
+</div>
+
+<hr>
+
+<h2>{{ i18n "last_posts" }}</h2>
+
+<ul>
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ range first 2 ($posts.ByPublishDate.Reverse) }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <p>{{ .Content | plainify | truncate 200 }}</p>
+    </li>
+  {{ end }}
+</ul>
+
+<a href="/posts">{{ i18n "more" }}</a>
+
+<hr>
+
+{{ end }}
