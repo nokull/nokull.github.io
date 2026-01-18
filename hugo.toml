@@ -1,26 +1,7 @@
 baseURL = "https://nokull.github.io/"
 title = "Nokull Demo"
 theme = "nokull"
-
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
-
-[languages]
-  [languages.ko]
-    languageName = "한국어"
-    languageCode = "ko-kr"
-    weight = 1
-
-  [languages.en]
-    languageName = "English"
-    languageCode = "en-us"
-    weight = 2
+languageCode = "ko-kr" 
 
 [params]
   description = "This is a demo"
-
-[outputs]
-home = ["HTML", "RSS"]
-section = ["HTML", "RSS"]
-taxonomy = ["HTML", "RSS"]
-term = ["HTML", "RSS"]

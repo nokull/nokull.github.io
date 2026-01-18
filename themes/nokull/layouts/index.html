@@ -8,7 +8,7 @@
 
 <hr>
 
-<h2>{{ i18n "last_posts" }}</h2>
+<h2>최근 글</h2>
 
 <ul>
   {{ $posts := where .Site.RegularPages "Section" "posts" }}
@@ -20,7 +20,7 @@
   {{ end }}
 </ul>
 
-<a href="/posts">{{ i18n "more" }}</a>
+<a href="/posts/">더보기...</a>
 
 <hr>
 
