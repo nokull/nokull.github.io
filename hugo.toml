@@ -18,3 +18,9 @@ defaultContentLanguageInSubdir = false
 
 [params]
   description = "This is a demo"
+
+[outputs]
+home = ["HTML", "RSS"]
+section = ["HTML", "RSS"]
+taxonomy = ["HTML", "RSS"]
+term = ["HTML", "RSS"]
