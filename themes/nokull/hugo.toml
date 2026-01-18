@@ -3,4 +3,4 @@ description = "Minimal Hugo theme for blog"
 license = "MIT"
 
 [min_version]
-hugo = "0.112.0"
+hugo = "0.154.5"
