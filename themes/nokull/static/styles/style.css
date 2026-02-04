@@ -19,6 +19,7 @@ a {
     color: var(--link-color);
     text-decoration: none;
     font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 a:hover {
@@ -30,7 +31,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   white-space: nowrap;
-  width: 40vw;
+  width: 90%;      
+  max-width: 800px;
   margin: 0 auto 30px;
 }
 
